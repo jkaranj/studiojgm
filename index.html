@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="logo/header_logo.png" type="image/gif" sizes="20x20">
+        
+        <title>Studio JGM</title>
+
+        <!-- ..................................................FONTS................................................ -->
+            <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
+
+        <!-- ....................................................................................................... -->
+
+        <link rel="stylesheet" type="text/css" href="navbar.css" >
+        <link rel="stylesheet" type="text/css" href="main.css" >
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>        
+
+    </head>
+
+    <body>
+<!-- ....................................................................................................... -->
+        <nav>
+            <div class="logoo">
+                <img src="logo/header_logo.png" class="logo" alt="logo jgm">
+            </div>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+           <div class="navv">
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="products.html" target="_blank">PRODUCTS</a></li>
+                <li><a href="projects.html" target="_blank">PROJECTS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="about.html" target="_blank">ABOUT</a></li>   
+            </ul>
+           </div>
+           <div>
+               <span class="bar"></span>
+           </div>
+        </nav>
+<!-- ....................................................................................................... -->
+        <section id="home">
+        <div id= "heading">
+            <h1 id="jg">JAIN GRANITE</h1><br>
+            <h1 id="am">AND MARBLE</h1><br><br>
+            <p>Welcome to</p>
+            <p>The Complete Tile Studio</p>
+        </div>
+        <h6>*Scroll down to know more</h6>
+        </section>
+<!-- ....................................................................................................... -->
+        <section id="about">
+            <div class="abtheader">
+                <h1 id="abtheading">Who are we?</h1>
+                <ul id="socialic">
+                    <li><a href="https://www.facebook.com/jgmldh/" target="_blank"><img src="logo/fb.png"></a></li>
+                    <li><a href="https://www.instagram.com/jain_granites_and_marble/" target="_blank"><img src="logo/ig.png"></a></li>
+                </ul>
+            </div>
+        
+            <div class="abtimg">
+                <img src="media/abtill2.png" alt="about us illustration">
+            </div>
+            <div class="abtpara">
+                <p id="abtpara1">
+                    Sample text sample text sample text Sample text sample text sample text Sample text sample text sample text Sample text sample text sample text
+                    Sample text sample text sample text Sample text sample text sample text Sample text sample text sample text Sample text sample text sample text
+                    Sample text sample text sample text Sample text sample text sample text Sample text sample text sample text Sample text  
+                </p>
+                <a href="about.html" target="_blank"><button>Know JGM Better</button></a>
+            </div>
+        
+        </section>
+<!-- ....................................................................................................... -->
+        <section id="product">
+            <h1>products</h1>
+        </section>
+<!-- ....................................................................................................... -->
+        <section id="testimonial">
+            <h1>clients</h1>
+        </section>
+<!-- ....................................................................................................... -->
+        <section id="contact">
+            <div class="cntheader col-md-6 col-xs-12">
+                <h1>Reach us @</h1>
+            </div>
+            <div class="cntsocial col-md-6 col-xs-12">
+                <a href="https://www.facebook.com/jgmldh/" target="_blank"><img src="logo/fb.png"></a>
+                <a href="https://www.instagram.com/jain_granites_and_marble/" target="_blank"><img src="logo/ig.png"></a>
+            </div>
+            <div class="cntpara col-md-6 col-xs-12">Adress</div>
+            <div class="cntform col-md-6 col-xs-12">form</div>
+            <div class="cntview col-md-6 col-xs-12">360view</div>
+            <div class="cntmap col-md-6 col-xs-12">maps</div>
+        </section>
+<!-- .......................................................................................................... -->
+        <section id="foot">
+            <h1>footer</h1>
+        </section>
+<!-- ......................................................................................................... -->
+<footer id="credit">
+<h6>Made with <span> &#9825; </span> by <a href="https://www.instagram.com/karan__jain/" target="_blank">Karan__jain</a></h6>
+</footer>
+<!-- ......................................................................................................... -->
+
+        <script src="nav.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>        
+    </body>
+
+    <script>
+
+        var nav = document.querySelector('.navv');
+        var barr = document.querySelector('.bar');
+        window.addEventListener('scroll', function()
+        {
+            if(window.pageYOffset > 50){
+                nav.classList += ' small'
+                barr.classList += ' smallbar'
+            }else{
+                nav.classList = 'navv';
+                barr.classList = 'bar'
+            }
+        }
+        )
+
+        var loogoo = document.querySelector('.logo');
+        window.addEventListener('scroll', function()
+        {
+            if(window.pageYOffset > 50){
+                loogoo.classList += ' smalllogo'
+            }else{
+                loogoo.classList = 'logo';
+            }
+        }
+        )
+        </script>
+    
+</html>
