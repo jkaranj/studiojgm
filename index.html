@@ -11,6 +11,7 @@
         <!-- ..................................................FONTS................................................ -->
             <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
             <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Spartan&display=swap" rel="stylesheet">
 
         <!-- ....................................................................................................... -->
 
@@ -70,7 +71,7 @@
                     Sample text sample text sample text Sample text sample text sample text Sample text sample text sample text Sample text sample text sample text
                     Sample text sample text sample text Sample text sample text sample text Sample text sample text sample text Sample text sample text sample text
                     Sample text sample text sample text Sample text sample text sample text Sample text sample text sample text Sample text  
-                </p>
+                </p><br><br>
                 <a href="about.html" target="_blank"><button>Know JGM Better</button></a><br>
                 <ul id="socialic">
                     <li><a href="https://www.facebook.com/jgmldh/" target="_blank"><img src="logo/fb.png"></a></li>
@@ -99,11 +100,69 @@
                 <li><a href="https://www.instagram.com/jain_granites_and_marble/" target="_blank"><img src="logo/ig.png"></a></li>
             </ul>
         </div>
-            <div class="cntpara">Adress</div>
-            <div class="cntform">form</div>
-            <div class="cntview">360view</div>
-            <div class="cntmap">maps</div>
+            <div class="cntpara">
+                <h1>STUDIO JGM</h1>
+                <h3>Jain Granite and marble</h3><br>
+                <p>Pakhowal Road</p>
+                <p>Opp. Marble Market</p>
+                <p>Adjoining Sterlin Resort</p>
+                <p>Ludhiana</p>
+                <p>Mobile number:</p>
+                <p> Aradhya Jain</p>
+                <a href="tel:+91-9872600086"><span> &#128222; </span>9872600086</a><br>
+                <a href="tel:+91-9815348000"><span> &#128222; </span>9815348000</a><br>
+                <p>Gautam Jain</p>
+                <a href="tel:+91-9781417179"><span> &#128222; </span>9781417179</a><br>
+                <a href="mailto:infojainmarble@gmail.com"><span> &#128231; </span>E-mail:   infojainmarble@gmail.com</a>
+            </div>
+
+            <div class="cntform">
+                <div class="formhead">
+                <h3>Fill this form for a follow up </h3>
+                </div>
+                <div class="formelements">
+                <form id="fillform" method="GET">
+                    <label for="name">Name</label><br>
+                    <input type="text" id="name" placeholder="Enter your name here"><br>
+                    <label for="mob">Mobile Number</label><br>
+                    <input type="number" id="mob" placeholder="Enter your mobile number here"><br>
+                    <label for="mail">E-mail</label><br>
+                    <input type="email" id="mail" placeholder="Enetr your email"><br>
+                    <label for="query">Message</label><br>
+                    <textarea id="query" placeholder="Write your enquiry/message here"></textarea><br>
+                    <!-- <label>Please select one</label> -->
+                    <select aria-placeholder="Select atleast one">
+                        <option value="0" selected disabled>Click here to choose one</option>
+                        <option value="cust">I am a customer</option>
+                        <option value="bp">Want to do business with you</option>
+                        <option value="none">none of above</option>
+                    </select><br>
+                    <!-- <label>Do business together</label>
+                    <input type="checkbox">
+                    <input type="checkbox"><br> -->
+                    <input type="submit">
+                    <input type="reset">
+                </form>
+                </div>
+            </div>
+            <div class="cntview">
+                <iframe src="https://www.google.com/maps/embed?pb=!4v1583337554824!6m8!1m7!1sCAoSLEFGMVFpcE5lOGFtYmZWVDJ3M1NHV0JwRVpvMTkxTmNJcDlZUG9WTDNHRUc4!2m2!1d30.84895663769025!2d75.79403595920132!3f20!4f0!5f0.7820865974627469" 
+                width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+            <div class="cntmap" id="map">
+            </div>
         </section>
+        <script>
+            function initMap() {
+                var loc = {lat: 30.849746, lng: 75.794098};
+                var map= new google.maps.Map(document.getElementById('map'), {
+                    zoom: 8,
+                    center: location
+                });
+            }
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdNZ1_8ho1geahMw6tMbB3kuwMoNP-QlE&callback=initMap"></script>
+
 <!-- .......................................................................................................... -->
         <section id="foot">
             <h1>footer</h1>

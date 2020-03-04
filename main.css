@@ -27,7 +27,7 @@
     position: absolute;
     top: 15%;
     left: 35%;
-    color: rgb(208,208,208);
+    color: rgba(208,208,208,1);
     max-width: 100vw;;
 }
 #heading h1
@@ -44,6 +44,9 @@
     /* margin-left: -10%; */
     line-height: 0.5em;
     text-align: center;
+    color: rgba(208,208,208,1);
+    padding-left: 0;
+    margin-left: 0;
 }
 #home h6
 {
@@ -98,6 +101,8 @@
     float: left;
     background: rgb(255, 254, 254);
     padding: 5%;
+    padding-left: 0;
+    margin-left: 0;
     font-size: 1.3rem;
 }
 .abtpara button
@@ -132,7 +137,7 @@
 .cntheader
 {
 width: 100%;
-height: 30vh;
+height: 20vh;
 text-align: center;
 display: flex;
 margin: 0;
@@ -171,21 +176,131 @@ margin: 0;
 }
 .cntpara
 {
-    background-color: yellowgreen;
+    /* background-color: yellowgreen; */
     width: 50%;
     height: 70vh;
-    display: flex;
+    display: block;
     float: left;
-    text-align: center;
+    text-align: left;
+}
+/* .cntpara h1, h3, p, a
+{
+padding-left: 20px;
+margin-left: 20%;
+text-decoration: none;
+color: rgb(27, 27, 27);
+line-height: 10pt;
+} */
+.cntpara h1
+{
+    padding-left: 20px;
+    font-size: 2.3em;
+    margin-left: 15%;
+    color: rgb(27, 27, 27);
+    line-height: 10pt;
+    /* line-height: 60pt; */
+}
+.cntpara h3
+{
+    padding-left: 20px;
+    font-size: 1.3em;
+    margin-left: 15%;
+    color: rgb(27, 27, 27);
+    line-height: 10pt;
+}
+.cntpara p
+{
+    font-size: 1.2em;
+    letter-spacing: 0.1em;
+    word-spacing: 0.5em;
+    color: rgb(27, 27, 27);
+    line-height: 10pt;
+    padding-left: 20px;
+    margin-left: 20%;
+}
+.cntpara a
+{
+    font-size: 1.2em;
+    letter-spacing: 0.1em;
+    word-spacing: 0.5em;
+    color: rgb(27, 27, 27);
+    line-height: 10pt;
+    padding-left: 20px;
+    margin-left: 20%; 
+    text-decoration: none;
 }
 .cntform
 {
-    background-color: violet;
+    /* background-color: violet; */
     width: 50%;
     height: 70vh;
-    display: flex;
-    float: right;
-    text-align: center;
+    display: inline-block;
+    padding: 20px;
+    padding-top: 0;
+    /* float: right; */
+    /* text-align: center; */
+
+}
+.formhead
+{
+    width: 100%;
+    padding-top: 0;
+    margin-top: 0;
+}
+.formelements
+{
+    width: 100%;
+    display: inline-block;
+}
+#fillform label
+{
+    align-items: left;
+    text-align: left;
+} 
+#fillform input[type=text],[type=number],[type=email], textarea, select
+{
+    width: 90%;
+    padding: 10px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid rgb(27, 27, 27);
+    /* border-radius: 5px; */
+    background-color: rgba(0, 0,0,0);
+}
+#fillform input[type=submit]
+{
+    background-color: rgba(34, 34, 34, 0.7);
+    color: rgb(217, 255, 222);
+    border: 1px solid #0b3338;
+    /* background: none; */
+    box-shadow: none;
+    border-radius: 0px;
+    width: 30%;
+    height: 5em;
+    cursor: pointer;
+}
+#fillform input[type=reset]
+{
+    /* background-color: rgba(190, 85, 85, 0.616); */
+    border: 1px solid #050a14;
+    background: none;
+    box-shadow: none;
+    border-radius: 0px;
+    width: 30%;
+    height: 5em;
+    cursor: pointer;
+}
+#fillform input[type=submit]:hover
+{
+    background-color: rgba(57, 134, 87,0.7);
+    color: rgb(255, 255, 255);
+}
+#fillform input[type=reset]:hover
+{
+    background-color: rgba(92, 33, 33,0.5);
+    color: rgb(22, 22, 22);
 }
 .cntview
 {
@@ -292,10 +407,19 @@ margin: 0;
     {
         display: none;
     }
-    #cntheader
+    .cntheader
     {
         width: 100%;
+        height: 30vh;
         float: none;
+    }
+    .cntpara p
+    {
+        margin-left: 10%;
+    }
+    .cntpara a
+    {
+        margin-left: 10%;
     }
     .cntsoc
     {
