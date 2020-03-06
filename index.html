@@ -152,17 +152,7 @@
             <div class="cntmap" id="map">
             </div>
         </section>
-        <script>
-            function initMap() {
-                var loc = {lat: +30.849746, lng: +75.794098};
-                var map= new google.maps.Map(document.getElementById('map'), {
-                    zoom: 8,
-                    center: loc
-                });
-            }
-        </script>
-        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdNZ1_8ho1geahMw6tMbB3kuwMoNP-QlE&callback=initMap"></script>
-
+        
 <!-- .......................................................................................................... -->
         <section id="foot">
             <h1>footer</h1>
@@ -177,6 +167,17 @@
         <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>         -->
     </body>
+    <script>
+        function initMap() {
+            var loc = {lat: +30.849746, lng: +75.794098};
+            var map= new google.maps.Map(document.getElementById('map'), {
+                zoom: 8,
+                center: loc
+            });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdNZ1_8ho1geahMw6tMbB3kuwMoNP-QlE&callback=initMap"></script>
+
 
     <script>
 
