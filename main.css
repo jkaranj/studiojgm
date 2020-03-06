@@ -178,7 +178,7 @@ margin: 0;
 {
     /* background-color: yellowgreen; */
     width: 50%;
-    height: 70vh;
+    height: 80vh;
     display: block;
     float: left;
     text-align: left;
@@ -233,7 +233,7 @@ line-height: 10pt;
 {
     /* background-color: violet; */
     width: 50%;
-    height: 70vh;
+    height: 80vh;
     display: inline-block;
     padding: 20px;
     padding-top: 0;
@@ -413,6 +413,10 @@ line-height: 10pt;
         height: 30vh;
         float: none;
     }
+    .cntheader h1
+    {
+        font-size: 5rem;
+    }
     .cntpara p
     {
         margin-left: 10%;
@@ -437,6 +441,24 @@ line-height: 10pt;
     .cntpara
     {
         width: 100%;
+    }
+    .cntpara h1
+    {
+        margin-left: 2%;
+    }
+    .cntpara h3
+    {
+        margin-left: 2%;
+    }
+    .cntpara p
+    {
+        font-size: 1em;
+        margin-left: 2%;
+    }
+    .cntpara a
+    {
+        font-size: 1em;
+        margin-left: 2%;
     }
     .cntform
     {
